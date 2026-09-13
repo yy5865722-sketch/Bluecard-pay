@@ -1,5 +1,6 @@
 package com.bluecardpay.app.ui.screens
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -70,7 +71,7 @@ fun AnalyticsScreen(
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = "€ $totalSpending",
+                    text = "€$totalSpending",
                     fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onPrimary
@@ -95,7 +96,7 @@ fun AnalyticsScreen(
                     modifier = Modifier
                         .padding(16.dp)
                         .fillMaxSize(),
-                    verticalArrangement = androidx.compose.foundation.layout.Arrangement.Center,
+                    verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
